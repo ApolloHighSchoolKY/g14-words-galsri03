@@ -30,10 +30,10 @@ public class Word
 
 
 		//Loop for every letter in "word"
-		int i = 0;
-		for(int i = 0; i < word.lenght(); i++)
+		int count = 0;
+		for(int i=0; i<word.length(); i++)
 			//Use indexOf to see if the letter is in the string "vowels"
-			if (VOWELS.indexOf(word.charAt(i)) >= 0)
+			if (VOWELS.indexOf(word.substring(i,i+1)) > -1)
 				count++;
 
 		return count;
